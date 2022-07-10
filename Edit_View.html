@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dharmsinh Desai University</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/DDU_Logo.jpg" rel="icon">
+  <link href="assets/img/DDU_Logo.jpg" rel="DDU_Logo">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+       input[type=text], input[type=password], input[type=email], input[type=number]{
+      width: 600px;
+      border: 1px solid black;
+    }
+    select{
+      width: 600px;
+      border: 1px solid black;
+      border-radius: 5px;
+      height: 38px;
+    }
+    form {
+        margin-left: 40px;;
+    }
+  </style>
+</head>
+<body style="margin-left: 10px;">
+    <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="Apply.html">Apply</a></li>
+          <li><a class="Active" href="Edit_View.html">Edit/View</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+    
+    <h1 style="text-align: center;">View the Information</h1>
+    <form action='read.php' method="post">
+        <div class="form-group">
+            <label for="exampleInputPassword1">Enter Form No </label>
+            <input type="number" class="form-control" id="exampleInputPassword1" name="formno" required>
+        </div>
+        <button type="submit" class="btn btn-primary" name="read">Read</button>
+    </form>
+
+    <hr>       
+    <h1 style="text-align: center;">Update the Information</h1> 
+        <form action='update.php' method="post">
+            <div class="form-group">
+                <label for="exampleInputPassword1">Enter Form No </label>
+                <input type="number" class="form-control" id="exampleInputPassword1" name="formno" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">New Email-ID</label>
+                <input type="email" class="form-control" id="exampleInputPassword1" name="emailid">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">New Password </label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">New Contact No </label>
+                <input type="text" class="form-control" id="exampleInputPassword1" name="contno">
+            </div>
+            <label for="branch">Select your New Branch </label><br>
+                <select id="branch" name="branch">
+                    <option value="select">Select</option>
+                    <option value="CE">Computer Engineering</option>
+                    <option value="CH">Chemical Engineering</option>
+                    <option value="CL">Civil Engineering</option>
+                    <option value="IC">Instrument & Control Engineering</option>
+                    <option value="IT">Information Technology Engineering</option>
+                    <option value="MH">Mechanical Engineering</option>
+                    <option value="EC">Electronics & Communication Engineering</option>
+                </select><br><br>
+            <button type="submit" class="btn btn-primary" name="update">Update</button>
+        </form>
+        <hr>    
+        <h1 style="text-align: center;">Delete the Information</h1>    
+        <form action='delete.php' method="post">
+            <div class="form-group">
+                <label for="exampleInputPassword1">Enter Form No </label>
+                <input type="number" class="form-control" id="exampleInputPassword1" name="formno" required>
+            </div>
+            <button type="submit" class="btn btn-primary" name="delete">Delete</button>
+        </form>
+
+        
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
